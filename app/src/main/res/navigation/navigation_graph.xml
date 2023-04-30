@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/volumeChartFragment">
+
+    <fragment
+        android:id="@+id/volumeChartFragment"
+        android:name="com.example.api_cheatsheet.volume.VolumeChartFragment"
+        android:label="Fragment1"
+        tools:layout="@layout/fragment_volume">
+        <action
+            android:id="@+id/action_to_bottom_fragment"
+            app:destination="@id/bottom_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exchangesListFragment"
+        android:name="com.example.api_cheatsheet.listExchanges.ExchangesList"
+        android:label="Fragment2"
+        tools:layout="@layout/fragment_list_exchanges">
+        <action
+            android:id="@+id/action_to_bottom_fragment"
+            app:destination="@id/bottom_fragment">
+
+            <argument
+                android:name="exchangeId"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_to_filter"
+            app:destination="@id/filterExhangesFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottom_fragment"
+        android:name="com.example.api_cheatsheet.bottomfragment.ExchangeDetail"
+        android:label="bottom_fragment"
+        tools:layout="@layout/layout_bottom_sheet">
+
+        <argument
+            android:name="exchangeId"
+            app:argType="string" />
+    </dialog>
+    <fragment
+        android:id="@+id/filterExhangesFragment"
+        android:name="com.example.api_cheatsheet.filter.FilterExchangesFragment"
+        android:label="Filter"
+        tools:layout="@layout/fragment_filter">
+        <action
+            android:id="@+id/action_to_bottom_fragment"
+            app:destination="@id/bottom_fragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginAll0.5x">8dp</dimen>
+    <dimen name="marginAll">16dp</dimen>
+    <dimen name="marginAll2x">32dp</dimen>
+
+    <dimen name="marginHorizont">24dp</dimen>
+    <dimen name="marginLayoutW">0dp</dimen>
+
+    <dimen name="textNormal">20dp</dimen>
+    <dimen name="textBig">24dp</dimen>
+    <dimen name="width">56dp</dimen>
+
+    <dimen name="navHeight">70dp</dimen>
+    <dimen name="elevation">0dp</dimen>
+    <dimen name="marginBottom">16dp</dimen>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.API_Cheatsheet" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/md_theme_light_tertiary</item>
+        <item name="colorPrimaryVariant">@color/my_black</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/my_black</item>
+        <item name="colorSurface">@color/my_purple</item>
+        <item name="android:color">@color/md_theme_light_tertiary</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+    </style>
+</resources>
